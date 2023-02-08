@@ -1,7 +1,6 @@
 import art
 import game_data
 import random
-from replit import clear
 
 print(art.logo)
 end_game = 0
@@ -21,13 +20,11 @@ while end_game == 0:
     selection = input("Who has more Instagram followers? Type A or B: ")
     if element_a['follower_count'] > element_b['follower_count'] and selection == "A":
         score += 1
-        clear()
         print(f"You're right! Current score: {score}")
         element_a = element_b
         
     elif element_b['follower_count'] > element_a['follower_count'] and selection == "B":
         score += 1
-        clear()
         print(f"You're right! Current score: {score}")
         element_a = element_b
         
